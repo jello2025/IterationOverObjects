@@ -81,11 +81,14 @@ let movieGenre = {};
 function groupMoviesByGenre(arrOfMovie) {
   arrOfMovie.filter((movie) => {
     if (movie.genre == "Drama") {
-      movieGenre.drama = [];
+      let dramaMovie = [];
+      movieGenre.drama = dramaMovie.push(movie.title);
     } else if (movie.genre == "Crime") {
-      movieGenre.crime = [];
+      let crimeMovie = [];
+      movieGenre.crime = crimeMovie.push(movie.title);
     } else if (movie.genre == "Action") {
-      movieGenre.action = [];
+      let actionMovie = [];
+      movieGenre.action = actionMovie.push(movie.title);
     }
   });
 }
